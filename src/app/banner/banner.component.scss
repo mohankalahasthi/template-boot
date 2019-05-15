@@ -1,5 +1,6 @@
 .bg{
     background-image:url('../../assets/bokeh_car_lights_bg.jpg');
-    width: 100%;
-    height:calc(100vh - 100px);
+    height: calc(100vh - 100px);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
