@@ -1,4 +1,10 @@
-
 <div class="bg">
     <app-header-nav></app-header-nav>
+    <ng-container *ngFor='let items of banContent'>
+        <div class="banner-bdy">
+            <h1>{{items.heading}}</h1>
+            <p>{{items.para}}</p>
+            <button class="banner-btn">{{items.button}}</button>
+        </div>
+    </ng-container>
 </div>

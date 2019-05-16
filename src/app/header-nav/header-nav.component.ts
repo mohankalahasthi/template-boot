@@ -11,5 +11,13 @@ export class HeaderNavComponent implements OnInit {
 
   ngOnInit() {
   }
+  bannerNav: any = [
+    {
+      a1: 'Home',
+      a2: 'Generic',
+      a3: 'Elements',
+      btn: 'SignUp'
+    }
+  ]
 
 }

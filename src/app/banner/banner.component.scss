@@ -1,6 +1,33 @@
 .bg{
     background-image:url('../../assets/bokeh_car_lights_bg.jpg');
-    height: calc(100vh - 100px);
+    height: calc(100vh);
     background-repeat: no-repeat;
     background-size: cover;
 }
+.banner-bdy{
+    text-align: center;
+    color: #ffffff;
+    padding: 14em 0em 14em;
+}
+.banner-bdy h1{
+    font-size: 4em;
+    font-weight: bold;
+}
+.banner-bdy p{
+    font-size: 30px;
+    padding: 25px;
+}
+.banner-btn{
+    background-color: #3cadd4;
+    border-radius: 30px;
+    padding: 16px 50px;
+    color: #ffffff;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    margin-top: 13px;
+}
+// .banner-btn:hover{
+//     background-color:#ffffff;
+//     opacity: 0.9;
+// }

@@ -1,0 +1,50 @@
+.bgcolor{
+    background-color: #F5F5F5;
+
+}
+.card-head{
+    h1{
+        text-align: center;
+        font-size: 3em;
+        padding: 70px 0px 20px;
+        font-weight: 700;  
+        color: #474747;  
+    };
+    p{
+        text-align: center;
+        color: #858585;
+        font-size: 1.5em;
+    }
+   }
+   .align{
+       padding-left :40px !important;
+   }
+   .card{
+       text-align: center;
+       padding: 20px;
+       height: 348px;
+
+       i{
+        width: 120px;
+        height: 120px;
+        color: #ffffff;
+        margin: auto;
+        border-radius: 70px;
+        padding: 43px;
+        margin-top: 35px;
+        font-size: 29px
+       };
+       h3{
+        font-size: 1.35em;
+        font-weight: 700;
+        color: #858585;
+        padding: 20px;
+       }
+       p{
+        color: #858585;
+        padding: 12px;
+        line-height: 22px;
+
+       }
+       
+    }

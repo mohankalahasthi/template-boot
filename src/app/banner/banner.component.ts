@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-banner',
   templateUrl: './banner.component.html',
@@ -11,5 +10,11 @@ export class BannerComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  banContent: any = [
+    {
+      heading: 'Hi. This is Transit.',
+      para: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
+      button: 'Lorem ipsum dolor'
+    }
+  ]
 }
