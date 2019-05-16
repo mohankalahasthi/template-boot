@@ -12,7 +12,7 @@
     }
 }
 .site-nav-links{
-    ul li a {
+     li a {
         color: rgba(255, 255, 255, 0.5);
         -moz-transition: color 0.2s ease-in-out;
         -webkit-transition: color 0.2s ease-in-out;
@@ -21,8 +21,15 @@
         transition: color 0.2s ease-in-out;
         display: inline-block;
         text-decoration: none;
+        padding-left: 30px;
+        font-size: 20px
     }
-    ul li a:hover{
+     li a:hover{
         color: #ffffff !important;
     }
+}
+.btn-nav{
+    border-radius: 17px;
+    padding: 8px 16px;
+    margin-left: 15px
 }
