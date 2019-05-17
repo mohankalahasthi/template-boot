@@ -1,5 +1,5 @@
 .bgcolor{
-    padding: 4em 0em 4em;
+    padding: 6em 0em 4em;
 
 }
 .profile-head{
@@ -7,22 +7,40 @@
         text-align: center;
         font-size: 3em;
         font-weight: 700;  
-        color: #474747;  
+        color: #474747; 
+        margin-bottom: 25px; 
     };
     p{
         text-align: center;
         color: #858585;
         font-size: 1.85em;
         padding: 15px;
+        margin-bottom: 40px;
     }
    }
    hr{
        width: 80%;
    }
+   .profile-img{
+    border-radius: 50px;    
+   }
+   .profile-bdy{
+       h4{
+        margin-top: 20px;
+        font-size: 1.15em;
+        font-weight: bold;
+        color: #474747
+       };
+       p{
+        margin-top: 10px;
+        font-size: 1.15em;
+        color: #444444
+       }
+   }
    .profile-footer{
     text-align: center;
        p{       
-        padding: 0px 18em 0px 18em;
+        margin: 0px 18em 0px 18em;
         line-height: 30px;
         font-size: 20px;
         color: #858585;

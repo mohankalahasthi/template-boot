@@ -5,22 +5,29 @@
   </div>
   <hr>
   <div class="container ">
-    <div class="row">        
+    <div class="row">
       <ng-container *ngFor="let item of profile">
-        <div class=" pull-left profile-img">
-          <img src={{item.image}}>
+        <div class="col-md-3">
+          <div class="row ">
+            <div class=" p-l-30">
+              <img src={{item.image}} class="profile-img m-rb-10">
+            </div>
+            <div class="profile-bdy">
+              <h4>{{item.head}}</h4>
+              <p>{{item.para}}</p>
+            </div>
+          </div>
+
         </div>
-          <div class="pull-right profile-bdy">
-          <h4>{{item.head}}</h4>
-          <p>{{item.para}}</p>
-        </div>
+
       </ng-container>
-    </div>    
+    </div>
   </div>
   <hr>
   <div class="profile-footer">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam dolore illum, temporibus veritatis eligendi, aliquam,
-        dolor enim itaque veniam aut eaque sequi qui quia vitae pariatur repudiandae ab dignissimos ex!</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam dolore illum, temporibus veritatis eligendi,
+      aliquam,
+      dolor enim itaque veniam aut eaque sequi qui quia vitae pariatur repudiandae ab dignissimos ex!</p>
     <button class="profile-btn">Lorem ipsum dolor sit</button>
   </div>
 </div>
