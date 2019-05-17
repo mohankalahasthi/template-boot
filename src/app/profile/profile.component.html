@@ -1,0 +1,26 @@
+<div class="bgcolor">
+  <div class="profile-head">
+    <h1>Lorem ipsum dolor sit</h1>
+    <p>Lorem ipsum dolor sit amet, delectus consequatur, similique quia!</p>
+  </div>
+  <hr>
+  <div class="container ">
+    <div class="row">        
+      <ng-container *ngFor="let item of profile">
+        <div class=" pull-left profile-img">
+          <img src={{item.image}}>
+        </div>
+          <div class="pull-right profile-bdy">
+          <h4>{{item.head}}</h4>
+          <p>{{item.para}}</p>
+        </div>
+      </ng-container>
+    </div>    
+  </div>
+  <hr>
+  <div class="profile-footer">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam dolore illum, temporibus veritatis eligendi, aliquam,
+        dolor enim itaque veniam aut eaque sequi qui quia vitae pariatur repudiandae ab dignissimos ex!</p>
+    <button class="profile-btn">Lorem ipsum dolor sit</button>
+  </div>
+</div>
