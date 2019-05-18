@@ -6,16 +6,22 @@
   <form>
     <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <input type="text" class="form-control" placeholder="Name">
-        </div>
-        <div class="col-md-6">
-          <input type="email" class="form-control" placeholder="Email">
+        <div class="col-md-12">
+          <div class="inputActionContainer m-t-20">
+            <input type="text" class="form-control fields m-rl-10 p-20 " placeholder="Name" />
+            <input
+              type="email"
+              class="form-control fields m-rl-10 p-20"
+              placeholder="Email"
+            />
+            <div class="text-area  m-t-30 m-b-10">
+              <textarea rows="6" cols="72" name="message" placeholder="Message" ></textarea>
+            </div>
+            <button class="banner-btn m-t-10">Send Message</button>
+          </div>
         </div>
       </div>
     </div>
-    <div class="text-area">
-      <textarea name="message" placeholder="Message"></textarea>
-    </div>
   </form>
 </div>
+
