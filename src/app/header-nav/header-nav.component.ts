@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router, ActivatedRoute} from '@angular/router';    
 
 @Component({
   selector: 'app-header-nav',
@@ -6,18 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header-nav.component.scss']
 })
 export class HeaderNavComponent implements OnInit {
-
-  constructor() { }
+  menus:any = []
+  constructor(private router: Router,private activeRoute : ActivatedRoute) { 
+    this.menus = ["home", "generics", "elements"];
+  }
 
   ngOnInit() {
+    // console.log(this.activeRoute.snapshot.url)  // array of states
+    // console.log(this.activeRoute.snapshot.url[0].path) 
   }
-  bannerNav: any = [
-    {
-      a1: 'Home',
-      a2: 'Generic',
-      a3: 'Elements',
-      btn: 'SignUp'
-    }
-  ]
+  
 
 }

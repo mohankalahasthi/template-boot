@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light" style="height:90px">
+<nav class="navbar navbar-expand-lg navbar-light nav-default-bg-color" style="height:90px">
   <h1 class="navbar-brand logo-container">
     <a>Transit</a>
   </h1>
@@ -7,21 +7,13 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ng-container *ngFor="let item of bannerNav">
       <ul class="navbar-nav ml-auto topnav site-nav-links">
-        <li class="nav-item">
-          <a class="nav-link" href="#">{{item.a1}} </a>
+        <li class="nav-item" *ngFor= " let item of menus">
+          <a class="nav-link" [routerLink]="item" style="text-transform:capitalize">{{item}} </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">{{item.a2}}</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">{{item.a3}}</a>
-        </li>
-        <li class="nav-item">
-          <button class="btn-nav">{{item.btn}}</button>
+          <button class="btn-nav" routerLink = "signup">Signup</button>
         </li>
       </ul>
-    </ng-container>
   </div>
 </nav>
