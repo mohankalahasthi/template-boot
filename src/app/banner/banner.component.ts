@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+
+import { CommonService } from '../services/common/common.service'
+
 @Component({
   selector: 'app-banner',
   templateUrl: './banner.component.html',
@@ -6,9 +9,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BannerComponent implements OnInit {
 
-  constructor() { }
+  arrayOfElements : any ;
+
+  constructor(private commonService :CommonService) { }
 
   ngOnInit() {
+    this.arrayOfElements = [[1,2,3,4,5,6],
+                            [6,7,8,9,11,12],
+                            [11,12,13,14,15,16,17,18,91,20],
+                            [26,27,28,[29,30]],
+                            [31,32,33]];
+
   }
   banContent: any = [
     {
@@ -17,4 +28,9 @@ export class BannerComponent implements OnInit {
       button: 'Lorem ipsum dolor'
     }
   ]
+  getName(){
+    console.log(this.commonService.fullName);
+  }
+  
+
 }

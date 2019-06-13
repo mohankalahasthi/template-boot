@@ -1,9 +1,29 @@
 <div class="bg">
-    <ng-container *ngFor='let items of banContent'>
-        <div class="banner-bdy">
-            <h1>{{items.heading}}</h1>
-            <p>{{items.para}}</p>
-            <button class="banner-btn">{{items.button}}</button>
-        </div>
-    </ng-container>
+  <ng-container *ngFor="let items of banContent">
+    <div class="banner-bdy">
+      <h1>{{ items.heading }}</h1>
+      <p>{{ items.para }}</p>
+      <button class="banner-btn" (click)="getName()">{{ items.button }}</button>
+    </div>
+  </ng-container>
 </div>
+
+<!-- <div *ngFor="let items of arrayOfElements; let i = index">
+  <div *ngIf="i === 3">
+    <div *ngFor="let subitemvalue of items; let j = index">
+      <div *ngIf = "j === 3" >
+        <div *ngFor = "let innerSubItem of subitemvalue">
+            <p *ngIf="innerSubItem === 29">{{innerSubItem}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<!-- <div *ngFor="let items of arrayOfElements; let i = index">
+  <div *ngFor="let subitemvalue of items; let j = index">
+    {{subitemvalue[0]}}
+      
+    </div>
+  </div> -->
+
