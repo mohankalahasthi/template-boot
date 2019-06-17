@@ -15,7 +15,8 @@ import { GenericsComponent } from './generics/generics.component';
 import { ElementsComponent } from './elements/elements.component';
 
 //services
-import {CommonService} from './services/common/common.service'
+import {CommonService} from './services/common/common.service';
+import { SigninService } from './signup/signin.service';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,7 @@ import {CommonService} from './services/common/common.service'
     AppRoutingModule,
     FormsModule
   ],
-  providers: [CommonService],
+  providers: [CommonService,SigninService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
